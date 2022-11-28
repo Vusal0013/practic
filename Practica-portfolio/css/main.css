@@ -1,0 +1,132 @@
+html {
+    user-select: none;
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.4em;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --c1: #22223b;
+    --c2: #023e8a;
+    --c3: #0077b6;
+    --c4: #0096c7;
+    --c5: #00b4d8;
+    --c6: #48cae4;
+    --c7: #90e0ef;
+    --c8: #ade8f4;
+    --c8: #caf0f8;
+
+    /* opacity 0.8 */
+    --co1: rgba(34, 34, 59,.7);
+    --co2: rgba(2, 60, 136,.7);
+    --co3: rgba(0, 119, 184,.7);
+    --co4: rgba(0, 150, 199,.7);
+    --co5: rgba(0, 180, 216,.7);
+    --co6: rgba(72, 202, 228,.7);
+    --co7: rgba(144, 224, 239,.7);
+    --co8: rgba(173, 232, 244,.7);
+    --co8: rgba(202, 240, 248,.7);
+    /* --co1: rgba(34, 34, 59,.8);
+    --co2: rgba(2, 60, 136,.8);
+    --co3: rgba(0, 119, 184,.8);
+    --co4: rgba(0, 150, 199,.8);
+    --co5: rgba(0, 180, 216,.8);
+    --co6: rgba(72, 202, 228,.8);
+    --co7: rgba(144, 224, 239,.8);
+    --co8: rgba(173, 232, 244,.8);
+    --co8: rgba(202, 240, 248,.8); */
+}
+
+/* container */
+.container {
+    background-image: url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #aaa;
+}
+    /* container--items */
+    .container > :not(:first-child, :last-child){
+        min-height: 100vh;
+        padding: 10px 50px;
+    }
+
+    .container > *{
+        min-width: 80%;
+        /* opacity: 0.8; */
+    }
+    .header, .contact{
+        padding: 5px 10px;
+    }
+    /* container--items */
+/* container */
+
+/* links */
+a{
+    text-decoration: none;
+}
+
+a:link {
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+a:active {
+    color: inherit;
+}
+/* links */
+
+/* headings */
+h1{
+    font-family: 'Cherry Swash', cursive;
+    text-align: center;
+    padding: 15px 0 25px 0;
+    text-shadow: 2px 3px 5px #333;
+}
+/* headings */
+
+/* paragraph */
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    text-align: left;
+    line-height: 30px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+/* paragraph */
+
+/* lists */
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 10px;
+}
+/* lists */
+
+/* extra */
+.dflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* extra */

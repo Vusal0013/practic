@@ -1,0 +1,206 @@
+/* header */
+
+.container .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--co1);
+}
+
+    /* logo */
+    .header .header__logo{
+        padding: 5px 5px;
+        max-height: 129px;
+        background-color: var(--co5);
+        border-radius:30px 0 30px 0;
+    }
+
+    .logo__img{
+        max-height: 119px;
+    }
+    /* logo */
+
+    /* menu */
+    .container .header .header__menu {
+        min-width: 335px;  /*@media min width verenden sonra ehtiyyac olmuyacaq*/
+        user-select: none;
+        margin: 30px 20px 30px 0;
+    }
+
+    .container .header .header__menu{
+        transition: all 0.3s;
+        color: var(--c7);
+    }
+
+    .container .header .header__menu > li:first-child{
+        border-radius:  50px 0 0 50px ;
+    }
+
+    .container .header .header__menu > li:hover {
+        background-color: var(--c3);
+        cursor: pointer;
+        transition: all 0.3s;
+        color: var(--c8);
+    }
+
+        /* dropdown */
+        .menu__tasks--dropdown{
+            position: relative;
+        }
+        .menu__tasks--dropdown:hover .tasks--dropdown__task{
+            position: absolute;
+            display: inline-block;
+            opacity: 1;
+            pointer-events: all;
+            right: 0px;
+            top: 100%;
+            transition: all 0.5s;
+        }
+        .tasks--dropdown__task{
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+            right: -100px;
+            top: 100%;
+            transition: all 0.5s;
+        }
+        .tasks--dropdown__task li{
+            position: relative;
+            background-color: var(--co1);
+            border: 1px solid var(--c3);
+            border-radius: 20px 0 0 20px;
+            text-align: left;
+            float: right;
+            min-width: 90px;
+            transition: all 0.3s;
+            padding: 6px 10px;
+        }
+        .tasks--dropdown__task li:hover{
+            background-color: var(--c3);
+            color: var(--c8);
+            left: 0;
+            min-width: 100px;
+            border-radius: 50px 0 0 50px;
+            transition: all 0.3s;
+        }
+
+            /* dropdown--items */
+        /* dropdown */
+    /* menu */
+
+/* header */
+
+
+
+
+
+/* about */
+.container #about, .news{
+    background-color: var(--co2);
+}
+#about h1, #blog h1, .news h1{
+    color: var(--c7);
+}
+#about p, #blog p, .news{
+    color: var(--c8);
+}
+/* about */
+/* blog */
+.container #blog{
+    background-color: var(--co3);
+}
+/* blog */
+
+/* portfolio */
+.container #portfolio{
+    background-color: var(--co4);
+}
+
+#portfolio h1, #contact h1{
+    color: var(--c2);
+}
+
+#portfolio p, #contact p{
+    color: var(--c8);
+}
+/* portfolio */
+
+
+
+/* contact */
+.container #contact{
+    background-color: var(--co5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact__container--items{
+    display: flex;
+    /* height: 85vh; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact__container--items > *{
+    margin: 0 10px;
+}
+
+
+
+.facebook:hover{
+    background-color: #dfe3ee;
+    color: #3b5998;
+    transition: all 0.5s;
+}
+
+.facebook{
+    transition: all 0.5s;
+    border-radius: 300px;
+}
+
+.whatsapp:hover{
+    color: #25d366;
+    /* background-color: #dfe3ee; */
+    transition: all 0.5s;
+}
+.whatsapp{
+    transition: all 0.5s;
+    border-radius: 300px;
+}
+
+.instagram:hover{
+    color: #F77737;
+    transition: all 0.5s;
+}
+.instagram{
+    transition: all 0.5s;
+}
+
+.call:hover{
+    color: #2dc653;
+    transition: all 0.5s;
+}
+.call{
+    transition: all 0.5s;
+}
+/* contact */
+
+
+/* tap-to-top */
+.container__arrow--up{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: var(--c7);
+    transition: all 0.3s;
+}
+
+.container__arrow--up:hover{
+    color: var(--c1);
+    transition: all 0.3s;
+}
+/* tap-to-top */
+
+

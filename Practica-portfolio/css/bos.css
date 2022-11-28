@@ -1,0 +1,130 @@
+.bos--container > h1{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.bos--container{
+    position: relative;
+    padding-top: 8rem !important;
+    width: 100%;
+    display: flex;
+    background-color: var(--c8);
+    gap: 5rem;
+}
+.bos--container__container--left{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.container--left__img--container{
+    width: 100%;
+}
+.bos--container__container--left .img--container__img{
+    width: 100%;
+    margin: auto;
+}
+.image--container{
+    margin-bottom: 40px
+}
+
+.bos--container__container--left .img--container__heading{
+    font-size: 1.8rem;
+    margin: 0 0 10px;
+    color: #666;
+}
+
+.img--container__text--container span.date{
+    color: #808080;
+    font-size: 1.4rem;
+}
+
+.img--container__text{
+    font-size: 1rem;
+    margin: 1rem 0;
+    letter-spacing: 0;
+    color: #4d4d4d;
+}
+
+.container--left__image--gallery{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+
+.container--left__image--gallery > div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.container--left__image--gallery img{
+    width: 100%;
+}
+
+.container--left__image--gallery > .image--gallery__item > .photo-cover{
+    position: absolute;
+    color: var(--c8);
+    top: 0;
+    left: 0;
+    background-color: rgba(50, 50, 50,.7);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.container--left__image--gallery > .image--gallery__item:hover .photo-cover{
+    opacity: 1;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.bos--container__container--right{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bos--container__container--right .right--news{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.bos--container__container--right .news__img{
+    width: 45%;
+}
+.news__img img{
+    width: 100%;
+}
+
+.right--news .news-text{
+    width: 55%;
+}
+
+.news-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bos--container__container--right > h4{
+    margin-bottom: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+}
+
+.right--news span.date{
+    color: #808080;
+    font-size: 1.2rem;
+}
+
+.news--hr{
+    margin: 2rem 0;
+}

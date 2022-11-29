@@ -1,8 +1,7 @@
 const tapToTop = document.querySelector(".container__arrow--up");
 
-const menuTaskItems = document.querySelector('.tasks--dropdown__task')
-
-const menuTask = document.querySelector(".menu__tasks--dropdown");
+const menuBar = document.querySelector('.header__menu__bar')
+const menu = document.querySelector('.header__menu')
 
 
 // taptotop function
@@ -20,4 +19,13 @@ function scrollFunction() {
 
 
 
+menuBar.addEventListener('click', () => {
+  if(menu.classList.contains("show")){
+    menu.classList.remove('show')
+    menuBar.classList.remove("deg90")
+  } else{
+    menu.classList.add("show")
+    menuBar.classList.add("deg90")
+  }
+})
 
